@@ -24,7 +24,7 @@ const Login = () => {
 
       if (state === 'Sign Up') {
         const { data } = await axios.post(
-          "http://localhost:4000/api/auth/login",
+          "http://localhost:4000/api/auth/register",
           { email, password },
           { withCredentials: true })
 
